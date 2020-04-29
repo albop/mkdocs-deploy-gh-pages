@@ -8,9 +8,7 @@ function print_info() {
 
 REQUIREMENTS="${GITHUB_WORKSPACE}/requirements.txt"
 
-if [ -f "${REQUIREMENTS}" ]; then
-    pip install -r "${REQUIREMENTS}"
-fi
+pip install poetry
 
 if [ -n "${CUSTOM_DOMAIN}" ]; then
     print_info "Setting custom domain for github pages"
@@ -37,4 +35,4 @@ fi
 git remote rm origin
 git remote add origin "${remote_repo}"
 
-mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
+poetry run mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
