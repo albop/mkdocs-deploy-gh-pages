@@ -1,3 +1,5 @@
+Forked from mhausenblas. Just trying to use poetry instead of pip.
+
 # GitHub Action to deploy an MkDocs site to GitHub Pages
 
 ![GitHub Badge](https://github.com/mhausenblas/mkdocs-deploy-gh-pages/workflows/Build/badge.svg)
