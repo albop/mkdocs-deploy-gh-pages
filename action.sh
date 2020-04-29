@@ -6,8 +6,6 @@ function print_info() {
     echo -e "\e[36mINFO: ${1}\e[m"
 }
 
-REQUIREMENTS="${GITHUB_WORKSPACE}/requirements.txt"
-
 pip install poetry
 
 if [ -n "${CUSTOM_DOMAIN}" ]; then
