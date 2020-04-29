@@ -6,7 +6,6 @@ function print_info() {
     echo -e "\e[36mINFO: ${1}\e[m"
 }
 
-pip install poetry
 
 if [ -n "${CUSTOM_DOMAIN}" ]; then
     print_info "Setting custom domain for github pages"
